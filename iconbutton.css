@@ -1,0 +1,25 @@
+.iconbutton {
+    color: rgba(10,10,10, 0.7);
+    text-shadow: 1px 1px 3px #eee, 0 0 0 #000, 1px 1px 3px #eee;
+
+    display: inline-block;
+    width: 22px;
+    text-align: center;
+    border: 0;
+    line-height: 20px;
+    padding: 0 2px;
+    margin: 1px;
+    border-radius: 5px;
+    background-color: #eee;
+    cursor: pointer;
+}
+.iconbutton.disabled {
+    opacity: 0.3;
+    cursor: inherit;
+}
+.iconbutton.disabled:hover {
+    box-shadow: inherit;
+}
+.iconbutton:hover {
+    box-shadow: 0 0 2px #000;
+}
