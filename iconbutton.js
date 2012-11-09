@@ -8,14 +8,15 @@ function IconButton(icon, title, onClick) {
     if (this.disabled) return;
     return onClick(evt);
   }, false);
-  var iconEl = document.createElement("i");
+  var iconEl = this.icon = document.createElement("i");
   iconEl.className = icon;
   this.el.appendChild(iconEl);
 }
 
 IconButton.prototype.resize = function (width, height) {
-  this.el.style.width = (width - 6) + "px";
-  this.el.style.height = (height - 2) + "px";
+  this.el.style.width = width + "px";
+  this.el.style.height = height + "px";
+  this.el.style.lineHeight = height + "px";
 };
 
 IconButton.prototype.enableIf = function (condition) {
